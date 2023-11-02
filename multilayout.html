@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><!--這是表示繁體中文語系-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Pinky,學習電腦">
+    <meta name="description" content="這是Pinky的第一支網頁">
+    <meta name="author" content="Pinky, pindu5413@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>這是網頁練習1031-複雜版面排版</title> <!--這是頁籤文字-->
+    <style>
+        /* 整體宣告 */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f1f1f1;
+        }
+
+        /* 頁首區塊 */
+        .header {
+            padding: 30px;
+            background: #fdfcfc;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 50px;
+        }
+
+        /* 選單列 */
+        .topnav {
+            background: black;
+            overflow: hidden;
+        }
+
+        /*選單列項目*/
+        .topnav a {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:last-child {
+            float: right;
+        }
+
+        /* 選單列經過變底色*/
+        .topnav a:hover {
+            background-color: #f2f2f2;
+            color: black;
+        }
+
+        /* 左欄設定 */
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+
+        /* 右欄設定 */
+        .rightcolumn {
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+        }
+
+        /* 內容區塊 */
+        .card {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+        }
+
+        /* 假圖 */
+        .fakeimg {
+            background: #aaa;
+            padding: 10px;
+        }
+
+        .big_pic {
+            height: 200px;
+        }
+
+        .small_pic {
+            height: 100px;
+        }
+
+        /* 頁尾區塊 */
+        .footer {
+            text-align: center;
+            background: #aaa;
+            clear: both;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>練習網站</h1>
+        <P>網站內容文字，填入假字讓畫面好看。</P>
+    </div>
+    <div class="topnav">
+        <a href="#">連結1</a>
+        <a href="#">連結2</a>
+        <a href="#">連結3</a>
+        <a href="#">其他連結</a>
+    </div>
+    <div class="row">
+        <!--內容分左右兩欄-->
+        <div class="leftcolumn">
+            <div class="card">
+                <h2>內文標題文字</h2>
+                <h5>標題描述說明,10月31日</h5>
+                <div class="fakeimg big_pic">假圖區塊</div>
+                <p>j文字內容</p>
+                <p>海是由大量鹹水組成的水體，四周鄰接陸地。[1]廣義上的海指由地球海洋鹹水水域組成的部分，一般把它看待為一整個世界洋，或是由若干大洋組合而成的水體。較小的次要海區（如地中海）或大型鹽湖（如裏海），則一般以「海」命名。這些海與大洋相比，沒有獨立的潮汐以及海流。海可調節地球的氣候，在水循環、碳循環、氮循環中均扮演著重要的角色。雖然人類從史前時代就開始在大海中旅行。
+                </p>
+            </div>
+            <div class="card">
+                <h2>內文標題文字</h2>
+                <h5>標題描述說明,10月31日</h5>
+                <div class="fakeimg big_pic">假圖區塊</div>
+                <p>j文字內容</p>
+                <p>海是由大量鹹水組成的水體，四周鄰接陸地。[1]廣義上的海指由地球海洋鹹水水域組成的部分，一般把它看待為一整個世界洋，或是由若干大洋組合而成的水體。較小的次要海區（如地中海）或大型鹽湖（如裏海），則一般以「海」命名。這些海與大洋相比，沒有獨立的潮汐以及海流。海可調節地球的氣候，在水循環、碳循環、氮循環中均扮演著重要的角色。雖然人類從史前時代就開始在大海中旅。
+                </p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <div class="card">
+                    <h2>側欄標題文字</h2>
+                    <div class="fakeimg small_pic">假圖區塊</div>
+                    <p>海是由大量鹹水組成的水體，四周鄰接陸地。[1]廣義上的海指由地球海洋鹹水水域組成的部分，一般把它看待為一整個世界洋，或是由若干大洋組合而成的水體。較小的次要海區（如地中海）或大型鹽湖（如裏海），則一般以「海」命名。這些海與大洋相比，沒有獨立的潮汐以及海流。
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>內文標題文字</h2>
+                <div class="fakeimg small_pic">假圖區塊</div>
+                <div class="fakeimg small_pic">假圖區塊</div>
+                <div class="fakeimg small_pic">假圖區塊</div>
+            </div>
+            <div class="card">
+                <h2>內文標題文字</h2>
+                <p>海是由大量鹹水組成的水體，四周鄰接陸地。廣義上的海指由地球海洋鹹水水域組成的部分，一般把它看待為一整個世界洋，或是由若干大洋組合而成的水體。較小的次要海區（如地中海）或大型鹽湖（如裏海），則一般以「海」命名。
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>網站版權宣告</h2>
+            <p>Copyright © 2023 Sandy. All rights reserved.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

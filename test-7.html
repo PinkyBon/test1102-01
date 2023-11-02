@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang ="zh-TW"><!--這是表示繁體中文語系-->
+    <head>
+        <meta charset ="UTF-8">
+        <meta name ="keywords" content ="Pinky,學習電腦">
+        <meta name ="description" content ="這是Pinky的第一支網頁">
+        <meta name ="author" content ="Pinky, pindu5413@gmail.com">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>這是網頁練習1030-樣式-行內&開頭</title>   <!--這是頁籤文字--> 
+        <link rel="stylesheet" href="style1.css">
+        <style>
+            body{
+                color: darkblue;
+                font-size: 14px;
+            }
+            p{
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            h4,h5{
+                color: green;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .red_p{
+                color: #ff0;
+                font-size: 20px;
+                line-height: 20px;
+                background:grey;
+            }
+            #testh1{
+               color: black;
+            }
+            .purple_p{
+                color: blueviolet;
+                font-size: 15px;
+                line-height: 30px;
+                background: yellowgreen;
+            }
+            #main_text{
+                background: #f3f393;
+                border: solid grey 5px;
+            }
+            #test > p{
+                font-weight: 800;
+                font-style: italic;
+                color: #f00;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="color: #FF7F50; font-style: italic;" class="purple_p" id="testh1">我是標題一</h1>
+        <p>這是Pinky的第一支網頁</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus quas error animi sequi blanditiis, minus enim dolor facilis illo alias officiis voluptate cupiditate, tenetur earum voluptatem cumque corporis ea quidem!</p>
+        <p>真片步冬布隻松要者晚着蝶，裏裝兔國植遠寺次年時鼻，<br>或弟知戊火星們同着她品功力、寺哭斤跟貫能象鴨看珠哪，意起包京虎干他那且害；雄具兄活木已娘流洋把畫發兆什木過即村。</p>
+        <h2 class="red_p">我是標題二</h2>
+        <p>甲老金打道土科杯朱才這語拍燈左每明，<span class="red_p">鳥爪</span>叫進步牛兩老圓斥原胡教爬可布甲出，犬住<span class="purple_p">校高</span>己別加可步方抱這說跟園很。怎左鴨第尤送去京乍衣活，菜右肖喜找而結者。</p>
+        <p id="main_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <h3 class="purple_p red_p ">我是標題三</h3>
+        <div id="test">        
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+            <div>
+                <p>裏裝兔國植遠寺次年時鼻</p>
+            </div>
+        </div>
+        <ul>
+            <li>清單1</li>
+            <li>清單2</li>
+            <li>清單3</li>
+            <li>清單4</li>
+            <li>清單5</li>
+            <li>清單6</li>
+            <li>清單7</li>
+            <li>清單8</li>
+        </ul>
+       <h4>我是標題四</h4>
+       <p>我是文字</p>
+       <ol>
+            <li>項目清單1</li>
+            <li>項目清單2</li>
+            <li>項目清單3</li>
+            <li>項目清單4</li>
+            <li>項目清單5</li>
+            <li>項目清單6</li>
+            <li>項目清單7</li>
+            <li>項目清單8
+              <ul>
+                <li>項目清單8-1</li>
+                <li>項目清單8-2</li>
+                <li>項目清單8-3</li>
+                <li>項目清單8-4</li>
+                <li>項目清單8-5</li>
+              </ul>
+            </li>  
+       </ol>
+       <h5>我是標題五</h5>
+       <p>我是國家</p> 
+       <!-- 標題 -->
+       <ol>
+         <li>日本</li>
+         <li>中國</li>
+         <li>香港</li>
+         <li>韓國</li>
+         <li>菲律賓</li>
+       </ol>
+       <table border ="1" width="500px" cellpadding="5" cellspacing="0">
+        <caption>本周各科小考成績</caption>
+        <tr>
+            <td width="100px"></td>
+            <th width="200px">國文</th>
+            <th width="200px">英文</th>
+        </tr>
+        <tr>
+            <th>王大明</th>
+            <td>100</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <th>陳阿貓</th>
+            <td>90</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <th>備註</th>
+            <td colspan="2">進步組別</td>
+        </tr>
+        <tr>
+            <th rowspan="2">說明</th>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    </body>
+</html>
+

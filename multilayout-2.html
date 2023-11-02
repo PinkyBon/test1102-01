@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><!--這是表示繁體中文語系-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Pinky,學習電腦">
+    <meta name="description" content="這是Pinky的第一支網頁">
+    <meta name="author" content="Pinky, pindu5413@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>這是網頁練習1031-複雜版面排版</title> <!--這是頁籤文字-->
+    <style>
+        /* 整體宣告 */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "微軟正黑體", Helvetica, sans-serif;
+        }
+
+        /* 結構設定 */
+        .header {
+            text-align: center;
+            padding: 5px;
+        }
+        .container{
+            padding: 60px;
+        }
+        .row{
+            height: 460px;
+            position: relative;
+        }
+        .column-66{
+            float: left;
+            width: 66%;
+            padding: 20px;
+        }
+        .column-33{
+            float: left;
+            width: 33%;
+            padding: 20px;
+        }
+
+        /* 內部元件調整 */
+        h1{
+            margin: 15px;
+            font-size: 64px;
+        }
+        b{
+            font-size: 48px;
+            margin: 0;
+            color: mediumseagreen;
+        }
+        button{
+            border: none;
+            color: white;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            background: mediumseagreen;
+            border-radius: 15px;
+            position: absolute;
+            bottom: 20px;
+        }
+        img{
+            height: 400px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        /* 自訂樣式 */
+        .red_p{
+            color: red;
+        }
+        .red_bg{
+            background-color: red;
+        }
+        .bg_beige{
+            background-color: beige;
+        }
+        .xlarge-text{
+            font-size: 36px;
+        }
+        .large-text{
+            font-size: 24px;
+        }
+        .small-text{
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="header bg_beige" >
+    <h1>Z字形版型範例</h1>
+    <P>幼手跳是不忠豆黑話哥黃面</P>
+</div>
+<!--區塊1-->
+<div class="container">
+    <div class="row">
+        <div class="column-66">
+            <h1>The App</h1>
+            <b>Why buy it</b>
+            <p><span class="xlarge-text">中文中「海」字出現極早，</span><span>在先秦文獻中多有出現，《詩經·小雅·沔水》</span>
+                有「沔彼流水，朝宗於海」。</p>
+            <button>下載App</button>
+        </div>
+        <div class="column-33">
+            <img src="/images/pic01.jpg" alt="巧克力" title="巧克力"></div>
+    </div>
+</div>
+<!--區塊2-->
+<div class="container bg_beige">
+    <div class="row">
+        <div class="column-66">
+            <img src="/images/ocean.jpg" alt="海洋" title="海洋">
+        </div>
+        <div class="column-33">
+            <h1>The App</h1>
+            <b class="red_p">Why buy it</b>
+            <p class="large-text">中文中「海」字出現極早，在先秦文獻中多有出現，如《詩經·小雅·沔水》有「沔彼流水，朝宗於海」。</p>
+            <button class="red_bg">下載App</button>
+        </div>
+    </div>
+</div>
+<!--區塊3-->
+<div class="container">
+    <div class="row">
+        <div class="column-33">
+            <img src="/images/sky.jpg" alt="天空" title="天空">
+        </div>
+        <div class="column-66">
+            <h1>The App</h1>
+            <b>Why buy it</b>
+            <p><span class="xlarge-text">中文中「海」字出現極早，</span>
+                在先秦文獻中多有出現，如《詩經·小雅·沔水》有「沔彼流水，朝宗於海」。</p>
+            <button>下載App</button>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

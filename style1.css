@@ -1,0 +1,40 @@
+body{
+    color: red;
+}
+
+a:link{
+    color: coral;
+    text-decoration: none;
+}
+a:hover{
+    color: cadetblue;
+    text-decoration: underline;
+}
+a:ative{
+    color: brown;
+    text-decoration: none;
+}
+a:visited{
+    color: black;
+    text-decoration: underline;
+}
+::selection{
+    background: greenyellow;
+    color: blue;
+}
+div p + p + p{
+    background: greenyellow;
+    color: blueviolet;
+}
+li:nth-child(2){
+    background: greenyellow;
+    color: blueviolet;
+}
+li:nth-child(even){
+    background: greenyellow;
+    color: black;
+}
+li:nth-child(odd){
+    background: yellow;
+    color: palevioletred;
+}
